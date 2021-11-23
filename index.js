@@ -1,7 +1,8 @@
-const axios = require('axios')
 const express = require('express')
 
-const port = 3005
+const PORT = process.env.PORT || 3005
+
+var http = require('http')
 
 const app = express()
 
@@ -116,6 +117,6 @@ app.get('/services/', async (req, res) => {
 //     res.status(200, 'Created')
 // })
 
-app.listen(port, async () => {
-    console.log('Conecatado na porta 3005')
-})
+var server = http.createServer(app)
+server.listen(PORT)
+console.log("Rodando na porta: " + PORT)
