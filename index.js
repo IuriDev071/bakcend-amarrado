@@ -74,6 +74,27 @@ app.get('/services/', async (req, res) => {
     res.json(services).status(200)
 })
 
+app.get('/duda/', async (req, res) => {
+    const teste = await [
+        {
+
+        },
+        {
+            Nome: 'Tunico',
+            Funcao: 'Só dorme',
+            Sentimento: 'Dormir mais'
+        },
+        {
+            Nome: 'Duda',
+            Funcao: 'Ser linda',
+            Namorado: 'Amon Lindo',
+            Sentimento: 'Amon te ama'
+        }
+    ]
+
+    res.json(teste).status(200)
+})
+
 // Create User
 // app.post('/usuarios/', async (req, res) => {
 
