@@ -77,9 +77,6 @@ app.get('/services/', async (req, res) => {
 app.get('/duda/', async (req, res) => {
     const teste = await [
         {
-
-        },
-        {
             Nome: 'Tunico',
             Funcao: 'Só dorme',
             Sentimento: 'Dormir mais'
