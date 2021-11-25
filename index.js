@@ -31,8 +31,20 @@ app.get('/users/', async (req, res) => {
         {
             id: 3,
             nome: 'Antonio',
-            email: 'tony@gmail.com',
+            email: 'abertolim@gmail.com',
             senha: '123123'
+        },
+        {
+            id: 4,
+            nome: 'Tonhão do Uber',
+            email: 'tony@gmail.com',
+            senha: '123123456'
+        },
+        {
+            id: 5,
+            nome: 'José',
+            email: 'josé@gmail.com',
+            senha: '678901'
         }
     ]
 
@@ -64,13 +76,33 @@ app.get('/services/', async (req, res) => {
         },
         {
             id_servico: 3,
+            data_entrada: '2021-10-22',
+            data_saida: '2021-10-31',
+            produto: 'M1 Pro',
+            descricao: 'Tela preta',
+            preco_mobra: '200,00',
+            preco_peca: '400,80',
+            valor_total: '600,80'
+        },
+        {
+            id_servico: 4,
             data_entrada: '2021-09-31',
             data_saida: '2021-10-02',
-            produto: 'iMac',
+            produto: 'MacBook Pro',
             descricao: 'Fica reiniciando ao ligar',
             preco_mobra: '200,00',
-            preco_peca: '399,80',
-            valor_total: '599,80'
+            preco_peca: '330,60',
+            valor_total: '530,60'
+        },
+        {
+            id_servico: 5,
+            data_entrada: '2021-09-30',
+            data_saida: '2021-10-05',
+            produto: 'iMac 2019',
+            descricao: 'Fica reiniciando',
+            preco_mobra: '300,00',
+            preco_peca: '389,80',
+            valor_total: '689,80'
         }
     ]
 
