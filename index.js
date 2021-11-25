@@ -49,7 +49,8 @@ app.get('/services/', async (req, res) => {
             produto: 'MacBook',
             descricao: 'Problema no SSD',
             preco_mobra: '0,00',
-            preco_peca: '129,00'
+            preco_peca: '129,00',
+            valor_total: '129,00'
         },
         {
             id_servico: 2,
@@ -58,7 +59,8 @@ app.get('/services/', async (req, res) => {
             produto: 'Mac M1',
             descricao: 'Não liga',
             preco_mobra: '200,00',
-            preco_peca: '223,00'
+            preco_peca: '223,00',
+            valor_total: '423,00'
         },
         {
             id_servico: 3,
@@ -67,7 +69,8 @@ app.get('/services/', async (req, res) => {
             produto: 'iMac',
             descricao: 'Fica reiniciando ao ligar',
             preco_mobra: '200,00',
-            preco_peca: '399,80'
+            preco_peca: '399,80',
+            valor_total: '599,80'
         }
     ]
 
