@@ -109,6 +109,29 @@ app.get('/services/', async (req, res) => {
     res.json(services).status(200)
 })
 
+// Read for Services
+app.get('/notifications/', async (req, res) => {
+    const notifications = await [
+        {
+            Titulo: 'Você tem um serviço pronto !',
+            Desc: 'Confira mais clicando aqui',
+            Page: 'Ods'
+        },
+        {
+            Titulo: 'Você sabia de nossa história?',
+            Desc: 'Saiba mais clicando aqui',
+            Page: 'Ods'
+        },
+        {
+            Titulo: 'Seja bem vindo a BSD Tecnologia !',
+            Desc: 'É um prazer ter você em nossa plataforma',
+            Page: 'Ods'
+        }
+    ]
+
+    res.json(notifications).status(200)
+})
+
 app.get('/duda/', async (req, res) => {
     const teste = await [
         {
