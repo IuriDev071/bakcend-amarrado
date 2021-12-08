@@ -120,12 +120,12 @@ app.get('/notifications/', async (req, res) => {
         {
             Titulo: 'Você sabia de nossa história?',
             Desc: 'Saiba mais clicando aqui',
-            Page: 'Ods'
+            Page: 'Warranty'
         },
         {
             Titulo: 'Seja bem vindo a BSD Tecnologia !',
             Desc: 'É um prazer ter você em nossa plataforma',
-            Page: 'Ods'
+            Page: ''
         }
     ]
 
